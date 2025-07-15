@@ -13,45 +13,67 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(scrollTop > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      className={`${styles.paddingX} w-full flex items-center py-2 fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+        {/* Logo and Text */}
         <Link
-          to='/'
-          className='flex items-center gap-2'
+          to="/"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            gap: "12px",
+            textDecoration: "none",
+          }}
         >
-        <img src={logo} alt="logo" style={{ width: '90px', height: 'auto' }} />
-
-         <p className='text-white text-[16px] font-bold cursor-pointer flex'>
-          Aya&nbsp;
-          <span className='sm:block hidden'> | 🎓 Junior Software Engineer</span>
-          </p>
-
+          <img
+            src={logo}
+            alt="logo"
+            style={{ width: 60, height: 70, display: "block" }}
+          />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              color: "white",
+              lineHeight: 1.1,
+            }}
+          >
+            <p
+              style={{
+                margin: 0,
+                fontWeight: "bold",
+                fontSize: 18,
+                cursor: "pointer",
+              }}
+            >
+              Aya
+            </p>
+            <p style={{ margin: 0, fontSize: 14, cursor: "pointer" }}>
+              | 🎓 Junior Software Engineer
+            </p>
+          </div>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        {/* Navigation Links for desktop */}
+        <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -65,11 +87,12 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        {/* Hamburger Menu for mobile */}
+        <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
+            alt="menu"
+            className="w-[28px] h-[28px] object-contain"
             onClick={() => setToggle(!toggle)}
           />
 
@@ -78,7 +101,7 @@ const Navbar = () => {
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+            <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
@@ -86,7 +109,7 @@ const Navbar = () => {
                     active === nav.title ? "text-white" : "text-secondary"
                   }`}
                   onClick={() => {
-                    setToggle(!toggle);
+                    setToggle(false);
                     setActive(nav.title);
                   }}
                 >
@@ -97,7 +120,12 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <div className="bg-red-500 text-white p-4">
+  Test Tailwind
+</div>
+
     </nav>
+    
   );
 };
 
