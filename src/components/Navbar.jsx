@@ -13,41 +13,37 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      setScrolled(scrollTop > 100);
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-2 fixed top-0 z-20 ${
+      className={`${
+        styles.paddingX
+      } w-full flex items-center py-5 fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        {/* Logo and Text */}
+      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
-          to="/"
+          to='/'
+          className='flex items-center gap-2'
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            gap: "12px",
-            textDecoration: "none",
-          }}
         >
-          <img
-            src={logo}
-            alt="logo"
-            style={{ width: 60, height: 70, display: "block" }}
-          />
-          <div
+          <img src={logo} alt='logo' className='w-14 h-15 object-contain' />
+          {/*<div
             style={{
               display: "flex",
               flexDirection: "column",
@@ -69,11 +65,32 @@ const Navbar = () => {
             <p style={{ margin: 0, fontSize: 14, cursor: "pointer" }}>
               | 🎓 Junior Software Engineer
             </p>
-          </div>
+          </div>*/}
+          
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              color: "white",
+              lineHeight: 1.1,
+            }}
+          >
+            <p
+              style={{
+                margin: 0,
+                fontWeight: "bold",
+                fontSize: 18,
+                cursor: "pointer",
+              }}
+            ></p>
+          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+            Aya </p>
+            <p className='sm:block hidden'> | 🎓 Junior Software Engineer</p>
+            </div>
         </Link>
 
-        {/* Navigation Links for desktop */}
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -87,21 +104,24 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Hamburger Menu for mobile */}
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+
+
+        <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain"
+            alt='menu'
+            className='w-[28px] h-[28px] object-contain'
             onClick={() => setToggle(!toggle)}
           />
+
+          
 
           <div
             className={`${
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
-            <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
+            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
@@ -109,7 +129,7 @@ const Navbar = () => {
                     active === nav.title ? "text-white" : "text-secondary"
                   }`}
                   onClick={() => {
-                    setToggle(false);
+                    setToggle(!toggle);
                     setActive(nav.title);
                   }}
                 >
@@ -120,13 +140,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="bg-red-500 text-white p-4">
-  Test Tailwind
-</div>
-
     </nav>
-    
   );
 };
 
 export default Navbar;
+
