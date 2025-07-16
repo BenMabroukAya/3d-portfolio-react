@@ -42,15 +42,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Spring Boot Developer",
     icon: backend,
   },
   {
@@ -101,70 +101,66 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Full Stack Developer Intern",
+    company_name: "HEC Electricity",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Feb 2025 – Jun 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and developed a full-stack project and appointment management platform.",
+      "Built using MERN stack (MongoDB, Express.js, React, Node.js) and Docker.",
+      "Created REST APIs and ensured responsiveness and usability.",
+    ],
+  },
+  {
+    title: "Game Development Intern",
+    company_name: "CGI Studio",
+    icon: tesla,
+    iconBg: "#E6DEDD",
+    date: "Aug 2024 – Sep 2024",
+    points: [
+      "Developed interactive 2D/3D scenes in Unity.",
+      "Handled character animation, level design, and AI scripting.",
+      "Used C# and Blender for game asset integration.",
+    ],
+  },
+  {
+    title: "Web Development Intern",
+    company_name: "Leader Solution Tactile (AURES GROUP)",
+    icon: shopify,
+    iconBg: "#383E56",
+    date: "Jun 2024",
+    points: [
+      "Created a full-stack internship management web app.",
+      "Used Next.js, Node.js, Express, and PostgreSQL.",
+      "Implemented user roles, CRUD, and responsive UI.",
+    ],
+  },
+  {
+    title: "IT Technician Intern",
+    company_name: "Blanco Security",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "Oct 2022 – Dec 2022",
+    points: [
+      "Maintained surveillance and IT infrastructure.",
+      "Installed hardware/software and configured security systems.",
+      "Resolved networking and device issues.",
     ],
   },
 ];
@@ -172,67 +168,59 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Aya’s dedication and skill during her internship made a real difference in our workflow.",
+    name: "Fictional Mentor",
+    designation: "Project Manager",
+    company: "HEC Electricity",
+    image: "https://randomuser.me/api/portraits/women/10.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "She has a strong eye for detail and quickly adapted to new technologies in game development.",
+    name: "Fictional Supervisor",
+    designation: "Lead Developer",
+    company: "CGI Studio",
+    image: "https://randomuser.me/api/portraits/men/12.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Freelance Platform Deployment",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Deployed a Spring MVC-based freelance management platform using Docker and Kubernetes on Minikube with MySQL database integration.",
     tags: [
       {
-        name: "react",
+        name: "docker",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "kubernetes",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "spring",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/", // Replace with your real repo
   },
   {
-    name: "Job IT",
+    name: "Employee Management App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Built an ASP.NET Core MVC app with dependency injection, LINQ, and role-based data control.",
     tags: [
       {
-        name: "react",
+        name: "aspnetcore",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "mvc",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "sqlserver",
         color: "pink-text-gradient",
       },
     ],
@@ -240,21 +228,17 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Mobile Leave Manager",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Developed a cross-platform leave management mobile app using Flutter and Firebase with admin control.",
     tags: [
       {
-        name: "nextjs",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "firebase",
         color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
       },
     ],
     image: tripguide,
