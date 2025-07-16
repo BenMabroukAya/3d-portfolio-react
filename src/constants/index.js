@@ -4,25 +4,26 @@ import {
   creator,
   css,
   docker,
-  figma,
   git,
   html,
+  java,
   javascript,
   jobit,
+  Kubernetes,
   meta,
   mobile,
   mongodb,
-  nodejs,
+  next,
+  PostgreSQL,
+  python,
   reactjs,
-  redux,
   shopify,
+  springboot,
   starbucks,
   tailwind,
   tesla,
-  threejs,
   tripguide,
-  typescript,
-  web,
+  web
 } from "../assets";
 
 export const navLinks = [
@@ -60,59 +61,35 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
+  // Langages de programmation
+  { name: "Java", icon: java },
   {
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "Git",
-    icon: git,
-  },
-  {
-    name: "Figma",
-    icon: figma,
-  },
-  {
-    name: "Docker",
-    icon: docker,
-  },
+    /*{ name: "TypeScript", icon: typescript },*/
+  { name: "Python", icon: python },
+  { name: "HTML 5", icon: html },
+  { name: "CSS 3", icon: css },
+
+  // Frameworks et bibliothèques
+  { name: "React JS", icon: reactjs },
+  { name: "Next.js", icon: next },
+  { name: "Spring Boot", icon: springboot },
+  { name: "Tailwind CSS", icon: tailwind },
+
+  // Bases de données
+  { name: "MongoDB", icon: mongodb },
+  { name: "PostgreSQL", icon: PostgreSQL },
+
+  // DevOps / Cloud / Conteneurs
+  { name: "Docker", icon: docker },
+  { name: "Kubernetes", icon: Kubernetes },
+
+  // Outils de développement
+  { name: "Git", icon: git }
 ];
+
 
 const experiences = [
   {

@@ -7,38 +7,55 @@ import menu from "./menu.svg";
 import mobile from "./mobile.png";
 import web from "./web.png";
 
+// === Core Technologies ===
+import python from "./tech/python.png";
+
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
+import expressjs from "./tech/express.js.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
+import java from "./tech/java.png";
 import javascript from "./tech/javascript.png";
+import Kubernetes from "./tech/Kubernetes.png";
 import mongodb from "./tech/mongodb.png";
+import MySQL from "./tech/MySQL.png";
+import next from "./tech/next.png";
 import nodejs from "./tech/nodejs.png";
+import PostgreSQL from "./tech/PostgreSQL.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
+import springboot from "./tech/springboot.png";
 import tailwind from "./tech/tailwind.png";
-import threejs from "./tech/threejs.svg";
 import typescript from "./tech/typescript.png";
+import VisualStudioCode from "./tech/VisualStudioCode.png";
 
+// === Companies ===
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
+// === Projects ===
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+// === Export All (Minimal + Useful) ===
 export {
-  backend, carrent, close, creator, css,
-  docker,
-  figma,
-  git, github, html,
-  javascript, jobit, logo, menu, meta, mobile, mongodb,
-  nodejs,
-  reactjs,
-  redux, shopify,
-  starbucks, tailwind, tesla, threejs, tripguide, typescript, web
+  backend,
+  // Projects
+  carrent, close,
+  creator,
+  // Technologies
+  css,
+  docker, expressjs, figma,
+  git, github, html, java, javascript, jobit, Kubernetes, logo,
+  menu,
+  // Companies
+  meta, mobile, mongodb, MySQL, next,
+  nodejs, PostgreSQL, python, reactjs,
+  redux, shopify, springboot, starbucks, tailwind, tesla, tripguide, typescript, VisualStudioCode, web
 };
 
