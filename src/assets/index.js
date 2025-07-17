@@ -2,10 +2,13 @@ import backend from "./backend.png";
 import close from "./close.svg";
 import creator from "./creator.png";
 import github from "./github.png";
+import gmail from "./gmail.png";
+import linkedin from "./linkedin.svg";
 import logo from "./logo.png";
 import menu from "./menu.svg";
 import mobile from "./mobile.png";
 import web from "./web.png";
+import whatsapp from "./whatsapp.png";
 
 // === Core Technologies ===
 import python from "./tech/python.png";
@@ -54,13 +57,11 @@ export {
   employee,
   expressjs,
   figma, freelancer, git,
-  github,
-  hec,
+  github, gmail, hec,
   html,
   java,
   javascript,
-  Kubernetes,
-  logo,
+  Kubernetes, linkedin, logo,
   menu,
   microservices,
   mobile,
@@ -78,6 +79,7 @@ export {
   tailwind,
   typescript,
   VisualStudioCode,
-  web
+  web,
+  whatsapp
 };
 
