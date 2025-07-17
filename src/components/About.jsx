@@ -5,7 +5,7 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 
-//serviceCard for services component 
+// ServiceCard for services component 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
@@ -36,7 +36,7 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <>
+    <div className="flex flex-col items-center text-center">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
@@ -52,16 +52,24 @@ const About = () => {
         user-focused applications. I’m a fast learner who thrives in collaborative environments 
         and takes pride in transforming ideas into impactful, real-world solutions. Let’s work together 
         to turn your vision into reality!
-
-
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <motion.a
+        href="https://drive.google.com/file/d/1yIThVLlyKsjS1kPiPGTC_4-cGvW3WQEf/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        variants={fadeIn("", "", 0.2, 1)}
+        className="mt-8 inline-block bg-primary text-white py-3 px-6 rounded-lg font-semibold cursor-pointer hover:bg-primary/80 transition"
+      >
+        Click here to view My Resume
+      </motion.a>
+
+      <div className='mt-20 flex flex-wrap justify-center gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
