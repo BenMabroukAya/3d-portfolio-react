@@ -1,27 +1,27 @@
 import {
+  aures,
   backend,
+  blanco,
   carrent,
+  cgi,
   creator,
   css,
   docker,
   git,
+  hec,
   html,
   java,
   javascript,
   jobit,
   Kubernetes,
-  meta,
   mobile,
   mongodb,
   next,
   PostgreSQL,
   python,
   reactjs,
-  shopify,
   springboot,
-  starbucks,
   tailwind,
-  tesla,
   tripguide,
   web
 } from "../assets";
@@ -95,7 +95,7 @@ const experiences = [
   {
     title: "Full Stack Developer Intern",
     company_name: "HEC Electricity",
-    icon: meta,
+    icon: hec,
     iconBg: "#E6DEDD",
     date: "Feb 2025 – Jun 2025",
     points: [
@@ -107,7 +107,7 @@ const experiences = [
   {
     title: "Game Development Intern",
     company_name: "CGI Studio",
-    icon: tesla,
+    icon: cgi,
     iconBg: "#E6DEDD",
     date: "Aug 2024 – Sep 2024",
     points: [
@@ -119,7 +119,7 @@ const experiences = [
   {
     title: "Web Development Intern",
     company_name: "Leader Solution Tactile (AURES GROUP)",
-    icon: shopify,
+    icon: aures,
     iconBg: "#383E56",
     date: "Jun 2024",
     points: [
@@ -131,7 +131,7 @@ const experiences = [
   {
     title: "IT Technician Intern",
     company_name: "Blanco Security",
-    icon: starbucks,
+    icon: blanco,
     iconBg: "#383E56",
     date: "Oct 2022 – Dec 2022",
     points: [

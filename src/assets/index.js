@@ -32,10 +32,10 @@ import typescript from "./tech/typescript.png";
 import VisualStudioCode from "./tech/VisualStudioCode.png";
 
 // === Companies ===
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import aures from "./company/aures.png";
+import blanco from "./company/blanco.png";
+import cgi from "./company/cgi.png";
+import hec from "./company/hec.png";
 
 // === Projects ===
 import carrent from "./carrent.png";
@@ -44,18 +44,18 @@ import tripguide from "./tripguide.png";
 
 // === Export All (Minimal + Useful) ===
 export {
-  backend,
+  aures, backend, blanco,
   // Projects
-  carrent, close,
+  carrent, cgi, close,
   creator,
   // Technologies
   css,
   docker, expressjs, figma,
-  git, github, html, java, javascript, jobit, Kubernetes, logo,
-  menu,
+  git, github,
   // Companies
-  meta, mobile, mongodb, MySQL, next,
+  hec, html, java, javascript, jobit, Kubernetes, logo,
+  menu, mobile, mongodb, MySQL, next,
   nodejs, PostgreSQL, python, reactjs,
-  redux, shopify, springboot, starbucks, tailwind, tesla, tripguide, typescript, VisualStudioCode, web
+  redux, springboot, tailwind, tripguide, typescript, VisualStudioCode, web
 };
 
