@@ -38,24 +38,46 @@ import cgi from "./company/cgi.png";
 import hec from "./company/hec.png";
 
 // === Projects ===
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import cryptolab from "./cryptolab.png";
+import employee from "./employee.png";
+import freelancer from "./freelancer.png";
+import microservices from "./microservices.png";
+import selenium from "./selenium.png";
+import soa from "./soa.png";
 
 // === Export All (Minimal + Useful) ===
 export {
-  aures, backend, blanco,
-  // Projects
-  carrent, cgi, close,
-  creator,
-  // Technologies
+  aures, backend,
+  blanco, cgi, close, creator, cryptolab,
   css,
-  docker, expressjs, figma,
-  git, github,
-  // Companies
-  hec, html, java, javascript, jobit, Kubernetes, logo,
-  menu, mobile, mongodb, MySQL, next,
-  nodejs, PostgreSQL, python, reactjs,
-  redux, springboot, tailwind, tripguide, typescript, VisualStudioCode, web
+  docker,
+  employee,
+  expressjs,
+  figma, freelancer, git,
+  github,
+  hec,
+  html,
+  java,
+  javascript,
+  Kubernetes,
+  logo,
+  menu,
+  microservices,
+  mobile,
+  mongodb,
+  MySQL,
+  next,
+  nodejs,
+  PostgreSQL,
+  python,
+  reactjs,
+  redux,
+  selenium,
+  soa,
+  springboot,
+  tailwind,
+  typescript,
+  VisualStudioCode,
+  web
 };
 
