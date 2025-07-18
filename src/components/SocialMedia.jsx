@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Tilt } from "react-tilt";
+//import { Tilt } from "react-tilt";
+import Tilt from 'react-parallax-tilt';
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { fadeIn, slideIn } from "../utils/motion";

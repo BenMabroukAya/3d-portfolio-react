@@ -1,6 +1,6 @@
-
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+//import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 
 import { SectionWrapper } from "../hoc";
