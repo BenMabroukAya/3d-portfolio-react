@@ -10,6 +10,7 @@ import {
   employee,
   freelancer,
   git,
+  HEC,
   hec,
   html,
   java,
@@ -146,12 +147,14 @@ const experiences = [
 ];
 
 const testimonials = [
-  {
-    testimonial:
-      "Aya’s dedication and skill during her internship made a real difference in our workflow.",
-    name: "Imed HAMED",
-    designation: "Project Manager",
-    company: "HEC Electricity"  },
+ {
+  testimonial:
+    "Aya’s dedication and skill during her internship made a real difference in our workflow.",
+  name: "Nessrine BEN ABDERRAHIM",
+  designation: "Lead Developer",
+  company: "Advantech – Aures Group"
+},
+
   {
     testimonial:
       "She has a strong eye for detail and quickly adapted to new technologies in game development.",
@@ -275,6 +278,21 @@ const projects = [
     image: carrent,
     source_code_link: "https://github.com/BenMabroukAya/ImmoTaxManager-",
   },*/
+  {
+    name: "HEC Web Application",
+    description:
+      "Comprehensive platform for HEC Électricité featuring bilingual AI chatbot, secure authentication, project & meeting management, real-time messaging, and interactive map visualization.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "nodejs", color: "green-text-gradient" },
+      { name: "mongodb", color: "pink-text-gradient" },
+      { name: "express", color: "orange-text-gradient" },
+      { name: "tailwindcss", color: "purple-text-gradient" },
+      { name: "gemini api", color: "cyan-text-gradient" }
+    ],
+    image: HEC, 
+    source_code_link: "https://github.com/BenMabroukAya/hec-webapp",
+  },
 ];
 
 

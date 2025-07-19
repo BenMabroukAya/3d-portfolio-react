@@ -3,6 +3,7 @@ import close from "./close.svg";
 import creator from "./creator.png";
 import github from "./github.png";
 import gmail from "./gmail.png";
+import HEC from "./hec.png";
 import linkedin from "./linkedin.svg";
 import logo from "./logo.png";
 import menu from "./menu.svg";
@@ -57,8 +58,7 @@ export {
   employee,
   expressjs,
   figma, freelancer, git,
-  github, gmail, hec,
-  html,
+  github, gmail, hec, HEC, html,
   java,
   javascript,
   Kubernetes, linkedin, logo,
